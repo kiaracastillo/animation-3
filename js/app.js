@@ -1,16 +1,28 @@
-var circle; // current x position of the circle
+// Name: Kiara Castillo Magallanes 
+//Date: 09/03/2022
+//Class #: 24603
+
+var c; // current x position of the circle
 var radius = 25; //radius of the circle
+var direction = -1;
+
+
 
 function setup () {
 
     createCanvas(800, 600);
-    circleX = 0
+    cX = 0
+    frameRate(5);
 
-    fill(50, 164, 168);
+   
 
 }
 
 function draw() {
-    circle (circleX, height/2, radius*2);
-    circleX = (circleX + 5) %width;
+    background(255, 255, 255)
+    circle (cX, height/2, radius*2);
+    cX = (cX + 5) %width;
+    fill(50, 164, 168);
+  
+
 }
